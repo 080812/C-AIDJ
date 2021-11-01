@@ -1,0 +1,47 @@
+.heading{
+    font-size: 25px;
+    width: 100%;
+    margin: 0;
+}
+
+.note{
+    color:black;
+    font-size: 17px;
+}
+
+body{
+    background-size: cover;
+}
+
+.div_speed{
+    float: left;
+}
+
+.divspeedimage{
+    width: 200px;
+    border-radius: 100px;
+}
+
+#speed,#volume{
+    font-size: 23px;
+    margin: 15px;
+}
+
+.div_volume{
+    float: right;
+}
+
+.copyrightfooter{
+    color: aliceblue;
+    bottom: 0;
+    position: fixed;
+    background-color:indigo;
+    text-align:center ;
+    width: 100%;
+    height: 25px;
+}
+
+canvas{
+    border: 5px solid red;
+    margin-top: 70px;
+}
