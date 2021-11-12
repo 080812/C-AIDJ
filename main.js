@@ -39,7 +39,31 @@ song.setVolume(volume)
 if(scoreRw>0.2){
     fill('red')
      circle(RWX,RWY,50)
+ 
+     if(RWY>0 && RWY<=100){
+         document.getElementById("speed").innerHTML="speed=0.5x"
+         song.rate(0.5)
+     }
 
+     else if(RWY>100 && RWY<=200){
+        document.getElementById("speed").innerHTML="speed=1x"
+        song.rate(1)
+    }
+
+    else if(RWY>200 && RWY<=300){
+        document.getElementById("speed").innerHTML="speed=1.5x"
+        song.rate(1.5)
+    }
+
+    else if(RWY>300 && RWY<=400){
+        document.getElementById("speed").innerHTML="speed=2x"
+        song.rate(2)
+    }
+
+    else if(RWY>400 && RWY<=500){
+        document.getElementById("speed").innerHTML="speed=2.5x"
+        song.rate(2.5)
+    }
  }
 }
 
@@ -69,5 +93,6 @@ function gotposes(results){
 
         scoreLw=results[0].pose.keypoints[9].score 
         scoreRw=results[0].pose.keypoints[10].score
+        
     }
 }
